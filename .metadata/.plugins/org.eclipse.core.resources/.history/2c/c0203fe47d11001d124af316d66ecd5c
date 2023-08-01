@@ -1,0 +1,52 @@
+package com.accountArray;
+
+import com.bean.Account;
+import com.serviceProviders.BusinessObjectProvider;
+import com.services.AccountServices;
+
+public class AccountArray {
+	
+	Account array[];
+	
+	public AccountArray(Account array[])
+	{
+		for(int i = 0; i<array.length; i++)
+		{
+			this.array[i] = array[i];
+		}
+	}
+	
+	
+	
+	
+	public boolean AccountSearch(int accNo)
+	{
+		for(int i = 0; i<array.length; i++)
+		{
+			if(array[i].getAccNo() == accNo)
+			{
+				array[i].toString();		
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	
+	
+	
+
+	public static void main(String[] args) 
+	{
+		AccountServices bank = BusinessObjectProvider.provideObject();
+		
+		
+		int accNo = bank.openAccount("Current", 500000.0f);
+		Account array[] = {};
+
+		AccountArray a1 = new AccountArray(array);
+
+	}
+
+}

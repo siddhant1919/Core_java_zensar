@@ -1,0 +1,163 @@
+package com.serviceImpl;
+
+import com.bean.Account;
+import com.exception.InvalidAccountNoException;
+import com.exception.NotSuffecientBalance;
+import com.services.AccountServices;
+
+public class AccountOperations  implements AccountServices 
+{
+
+//	Data from Java Bean
+	private Account acc;
+	
+	public int openAccount(String type, float amount) 
+	{
+		acc = new Account(type, amount);
+		return acc.getAccNo();
+	}
+	
+//	Validation method to help business logic
+	
+	public boolean validateAccNo(int accNo) throws InvalidAccountNoException
+	{
+		boolean val = false;
+		if(accNo == acc.getAccNo())
+		{
+			val = true;
+		}
+		else
+		{
+			throw new InvalidAccountNoException("Incorrect Account no");
+		}
+		
+		return val;
+	}
+	
+	
+//	public boolean balanceCheck(float amount) throws NotSuffecientBalance
+//	{
+//		boolean val = false;
+//		if(amount <= acc.getAccBal())
+//		{
+//			val = true;
+//			
+//		}
+//		else
+//		{
+//			throw new NotSuffecientBalance("Insufficient Account balance");
+//		}
+//		
+//		return val;
+//	}
+
+	
+	public float deposit(int accNo, float amount) 
+	{
+		float upBal = 0;
+		
+		try 
+		{
+			if(validateAccNo(accNo))
+			{
+				acc.setAccBal((acc.getAccBal()+amount));
+				upBal = acc.getAccBal();
+			}
+			else
+			{
+				System.out.println("Invalid Acc No");
+				upBal = 0f;
+			}
+		}
+		 catch(InvalidAccountNoException e)
+		{
+			 e.printStackTrace();
+		}
+		
+		
+		return upBal;
+	}
+
+	
+	public float withdraw(int accNo, float amount) 
+	{
+		
+		
+		try 
+		{
+			if(validateAccNo(accNo) && amount <= acc.getAccBal())
+			{
+				
+				float tempBal = acc.getAccBal() - amount;
+				acc.setAccBal(tempBal);
+				System.out.println("Transaction Successfull Avalaible Balance: "+acc.getAccBal());
+				return amount;
+			}
+			else 
+			{	
+				System.out.println("Invalid Acc No or Insufficient amount in acc");
+				return 0;
+			}
+		}
+		
+		 catch(InvalidAccountNoException e)
+		 {
+				 e.printStackTrace();
+				 return 0f;
+		 }
+		
+		
+	}
+
+	
+	public float balEnquiry(int accNo) 
+	{
+		try
+		{
+			if(validateAccNo(accNo)) 
+			{
+				return acc.getAccBal();
+			}
+			else {
+				System.out.println("Invalid Acc No");
+				return 0;
+			}
+		}
+		
+		 catch(InvalidAccountNoException e)
+		{
+			 e.printStackTrace();
+			 return 0;
+		}
+		
+		
+	}
+
+	
+	public String printAccountDetails(int accNo) 
+	{
+		String accData = null;
+		
+		try 
+		{
+			if(validateAccNo(accNo))
+			{
+				accData = acc.toString();
+				return accData;
+			}
+			else
+			{
+				accData = "Invalid account no please try again";
+				return "";		
+			}
+		}
+		
+		 catch(InvalidAccountNoException e)
+		{
+			 e.printStackTrace();
+			 return "";
+		}
+		
+	}
+	
+}

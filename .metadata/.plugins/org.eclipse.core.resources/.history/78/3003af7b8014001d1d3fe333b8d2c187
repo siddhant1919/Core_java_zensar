@@ -1,0 +1,10 @@
+package com.collect;
+
+public class StudentsCollection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

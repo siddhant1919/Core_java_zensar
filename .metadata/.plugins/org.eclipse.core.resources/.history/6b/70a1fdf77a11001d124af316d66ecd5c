@@ -1,0 +1,31 @@
+package com.gen;
+
+import java.lang.reflect.Array;
+
+public class Account <T extends Array> {
+
+	T array[];
+	
+	public Account(T array[])
+	{
+		for(int i = 0; i<array.length; i++)
+		{
+			this.array[i] = array[i];
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) 
+	{
+		Account <Array> a = new Account({10,12,13,14});
+		
+		
+
+	}
+
+}

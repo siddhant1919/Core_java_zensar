@@ -1,0 +1,42 @@
+package com.collect;
+
+import java.util.*;
+import java.util.TreeSet;
+public class DemoCollection 
+{
+
+	public static void main(String[] args) 
+	{
+		ArrayList a1 = new ArrayList();
+		a1.add(3000);
+		a1.add("java");
+		a1.add(new Float(20.0f));
+		a1.add(new Float(20.0f));
+		a1.add(new Double(200.4));
+		
+		HashSet s1 = new HashSet();
+		s1.add("Java");
+		s1.add("Spring");
+		s1.add("Hibernationg");
+		s1.add("Angular");
+		s1.add("Java");
+		
+		
+//		TreeSet t1 = new TreeSet();
+//		t1.add("Java");
+//		t1.add("Spring");
+//		t1.add("Hibernationg");
+//		t1.add("Angular");
+//		t1.add("Java");
+		
+		Vector v1 = new Vector();
+		v1.add("Java");
+		v1.add("Spring");
+		v1.add("Hibernationg");
+		v1.add("Angular");
+		v1.add("Java");
+		
+		System.out.println(v1);
+	}
+
+}

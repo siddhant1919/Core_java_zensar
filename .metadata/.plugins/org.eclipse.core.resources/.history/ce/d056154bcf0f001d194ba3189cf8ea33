@@ -1,0 +1,42 @@
+package com.threading;
+
+public class DemoThreading extends Thread {
+
+	Thread t1, t2;
+	
+	public DemoThreading()
+	{
+		t1 = new Thread(this);
+		t1.start();
+		
+		t2 = new Thread();
+		t2.start();
+	}
+	
+	public void run()
+	{
+		if(Thread.currentThread() == t1)
+		{
+			for(int i = 0;i<10;i++)
+			{
+				System.out.println("Java.........t1");
+			}
+		}
+		
+		if(Thread.currentThread() == t2)
+		{
+			for(int i = 0;i<10;i++)
+			{
+				System.out.println("Java.........t2");
+			}
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+		DemoThreading d1 = new DemoThreading();
+		d1.run();
+	}
+	
+	
+}

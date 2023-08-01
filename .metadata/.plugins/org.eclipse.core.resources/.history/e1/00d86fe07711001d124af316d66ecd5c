@@ -1,0 +1,30 @@
+package com.gen;
+
+public class DemoGenerics <T extends Number>{
+
+	T val;
+	
+	public DemoGenerics(T val)
+	{
+		this.val = val;
+	}
+	
+	public T getData()
+	{
+		return val;
+	}
+	
+	public static void main(String[] args) 
+	{
+		DemoGenerics<Integer> d1 = new DemoGenerics<Integer> (100);
+		int val1 = d1.getData();
+		
+		DemoGenerics<String> d2 = new DemoGenerics<String> ("Java Rocks");
+		String val2 = d2.getData();
+		
+		DemoGenerics<Float> d3 = new DemoGenerics<> (1000f);
+		
+//		d1 = d2;
+		
+	}
+}

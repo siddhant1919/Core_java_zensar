@@ -1,0 +1,12 @@
+package com.io;
+
+import java.io.*;
+public class ConsoleToConsole {
+
+	public static void main(String[] args) {
+		BufferedInputStream bis = null;
+		BufferedOutputStream bos = null;
+
+	}
+
+}

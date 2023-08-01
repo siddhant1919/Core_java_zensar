@@ -1,0 +1,22 @@
+package com.gen;
+
+public class DemoGenerics <T>{
+
+	T val;
+	
+	public DemoGenerics(T val)
+	{
+		this.val = val;
+	}
+	
+	public T getData()
+	{
+		return val;
+	}
+	
+	public static void main(String[] args) 
+	{
+		DemoGenerics<Integer> d1 = new DemoGenerics(<Integer> (100));
+		
+	}
+}

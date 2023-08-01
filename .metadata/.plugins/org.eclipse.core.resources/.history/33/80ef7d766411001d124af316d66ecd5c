@@ -1,0 +1,24 @@
+
+package com.gem;
+
+public class DemoGem {
+
+	Object val;
+	
+	
+	public DemoGem (Object val)
+	{
+		this.val = val;
+	}
+	public Object getData()
+	{
+		return val;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		DemoGem d1 = new DemoGem(new Integer(100));
+	}
+
+}

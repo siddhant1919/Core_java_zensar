@@ -1,0 +1,90 @@
+package com.accountArray;
+
+import com.bean.Account;
+
+public class AccountArray {
+	
+	Account array[];
+	
+//	Account a1;
+//	Account a2;
+//	Account a3;
+//	Account a4;
+//	Account a5;
+//	Account a6;
+//	Account a7;
+//	Account a8;
+//	Account a9;
+//	Account a10;
+	
+	
+	public AccountArray(Account array[])
+	{
+		for(Account i; i<array.length; i++ )
+		{
+			
+		}
+	}
+	
+	
+	
+	
+//	public AccountArray(Account a1, Account a2, Account a3, Account a4, Account a5, Account a6, Account a7, Account a8,
+//			Account a9, Account a10) 
+//	{
+//		this.a1 = a1;
+//		this.a2 = a2;
+//		this.a3 = a3;
+//		this.a4 = a4;
+//		this.a5 = a5;
+//		this.a6 = a6;
+//		this.a7 = a7;
+//		this.a8 = a8;
+//		this.a9 = a9;
+//		this.a10 = a10;
+//		
+//	}
+
+
+
+
+	public boolean AccountSearch(int accNo)
+	{
+		for(int i = 0; i<array.length; i++)
+		{
+			if(array[i].getAccNo() == accNo)
+			{
+				array[i].toString();		
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	
+	
+	
+
+	public static void main(String[] args) 
+	{
+		
+		Account a1 = new Account("Current", 50000.0f);
+		Account a2 = new Account("Saving", 600000.0f);
+		Account a3 = new Account("Current", 500000.0f);
+		Account a4 = new Account("Saving", 900000.0f);
+		Account a5 = new Account("Current", 500000.0f);
+		Account a6 = new Account("Saving", 300000.0f);
+		Account a7 = new Account("Saving", 500000.0f);
+		Account a8 = new Account("Current", 300000.0f);
+		Account a9 = new Account("Current", 500000.0f);
+		Account a10 = new Account("Salary", 200000.0f);
+		
+		Account array[] = {a1,a2,a3, a4, a5, a6, a7, a8, a9, a10};
+		
+		AccountArray aa1 = new AccountArray(array);
+		aa1.AccountSearch(900);
+
+	}
+
+}

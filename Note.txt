@@ -1,0 +1,206 @@
+Access specifier
+Strong()
+Final()
+toString()
+.equals()
+hashCode()
+static keyword
+downcasting
+interfaces
+Runnable
+Exception Handling
+Concurrency
+Thread (syncronized keyword)
+Generic Data Type
+auto boxing
+Cohesion
+Collections in java
+InputStream
+OutputStream
+Comparator
+Comparable
+Serialization
+tagging and marker interface
+JDBC(architecture, layer)
+prepared statement
+DAO
+Inner class
+Assertion(testing)
+junit(unit testing)
+
+
+-----------------------------------------------------------
+Introduction to Java
+Data Types, Variables, and Arrays
+Control Structures (if-else, switch-case, loops)
+OOP Concepts (Classes and Objects, Inheritance, Polymorphism, Abstraction, Encapsulation)
+Exception Handling
+Input and Output Streams (File handling, Serialization, and Deserialization)
+Collections Framework (List, Set, Map, etc.)
+Generics
+Multithreading
+Synchronization
+Networking (URL, TCP/IP, Sockets, RMI)
+JDBC (Java Database Connectivity)
+Annotations
+Lambda expressions
+Date and Time API
+Regular Expressions
+Enumerations
+Garbage Collection
+Reflection
+Java Virtual Machine (JVM)
+
+------------------------------------------------------------
+150 Core Java questions
+
+What is Java?
+What is the difference between Java and other programming languages?
+What are the key features of Java?
+What is a platform?
+What is the Java platform?
+What is the Java Development Kit (JDK)?
+What is the Java Runtime Environment (JRE)?
+What is the Java Virtual Machine (JVM)?
+What is the Java Class Library?
+What is bytecode?
+What is a Java application?
+What is a Java applet?
+What is a Java servlet?
+What is a JavaServer Page (JSP)?
+What is a JavaBean?
+What is a package in Java?
+What is an interface in Java?
+What is an abstract class in Java?
+What is a final class in Java?
+What is an inner class in Java?
+What is inheritance in Java?
+What is polymorphism in Java?
+What is encapsulation in Java?
+What is abstraction in Java?
+What is a constructor in Java?
+What is a method in Java?
+What is an instance variable in Java?
+What is a class variable in Java?
+What is a local variable in Java?
+What is the difference between an instance variable and a class variable in Java?
+What is a static method in Java?
+What is the difference between a static method and an instance method in Java?
+What is a variable in Java?
+What is a primitive type in Java?
+What is an object in Java?
+What is a reference variable in Java?
+What is a null reference in Java?
+What is a wrapper class in Java?
+What is autoboxing and unboxing in Java?
+What is a string in Java?
+What is the difference between == and equals() in Java?
+What is a StringBuilder in Java?
+What is a StringBuffer in Java?
+What is an array in Java?
+What is a multidimensional array in Java?
+What is a collection in Java?
+What is an ArrayList in Java?
+What is a LinkedList in Java?
+What is a Vector in Java?
+What is a HashSet in Java?
+What is a TreeSet in Java?
+What is a HashMap in Java?
+What is a TreeMap in Java?
+What is a queue in Java?
+What is a stack in Java?
+What is a stream in Java?
+What is a lambda expression in Java?
+What is a functional interface in Java?
+What is a default method in Java?
+What is a static method in an interface in Java?
+What is a try-catch block in Java?
+What is a finally block in Java?
+What is an exception in Java?
+What is a checked exception in Java?
+What is an unchecked exception in Java?
+What is the difference between a checked and an unchecked exception in Java?
+What is a throw statement in Java?
+What is a throws clause in Java?
+What is an assertion in Java?
+What is a thread in Java?
+What is a multithreaded program in Java?
+What is a synchronized block in Java?
+What is a race condition in Java?
+What is a deadlock in Java?
+What is a thread pool in Java?
+What is a daemon thread in Java?
+What is thread priority in Java?
+What is thread yield in Java?
+What is thread sleep in Java?
+What is thread join in Java?
+What is a monitor in Java?
+What is a semaphore in Java?
+What is a mutex in Java?
+What is a countdown latch in Java?
+What is a cyclic barrier in Java?
+What is a CompletableFuture in Java?
+What is a fork/join framework in Java?
+What is the Collections framework in Java?
+What is the Comparable interface in Java?
+What is the Comparator interface in Java?
+What is the Iterable interface in Java?
+What is the Iterator interface in Java?
+What is the Map interface in Java?
+What is the List interface in Java?
+What is the Set interface in Java?
+What is the Queue interface in Java?
+What is the Deque interface in Java?
+What is the EnumSet class in Java?
+What is the EnumMap class in Java?
+What is the Arrays class in Java?
+What is the System class in Java?
+What is the Math class in Java?
+What is the StringJoiner class in Java?
+What is the Objects class in Java?
+What is the StringTokenizer class in Java?
+What is the Random class in Java?
+What is the Calendar class in Java?
+What is the DateFormat class in Java?
+What is the SimpleDateFormat class in Java?
+What is the TimeZone class in Java?
+What is the Locale class in Java?
+What is the NumberFormat class in Java?
+What is the Character class in Java?
+What is the StringBufferInputStream class in Java?
+What is the ByteArrayInputStream class in Java?
+What is the DataInputStream class in Java?
+What is the FileInputStream class in Java?
+What is the FilterInputStream class in Java?
+What is the BufferedInputStream class in Java?
+What is the PushbackInputStream class in Java?
+What is the SequenceInputStream class in Java?
+What is the PrintStream class in Java?
+What is the ByteArrayOutputStream class in Java?
+What is the DataOutputStream class in Java?
+What is the FileOutputStream class in Java?
+What is the FilterOutputStream class in Java?
+What is the BufferedOutputStream class in Java?
+What is the ObjectOutputStream class in Java?
+What is the ObjectInputStream class in Java?
+What is the Console class in Java?
+What is the Scanner class in Java?
+What is the Reader class in Java?
+What is the Writer class in Java?
+What is the FileReader class in Java?
+What is the FileWriter class in Java?
+What is the BufferedReader class in Java?
+What is the BufferedWriter class in Java?
+What is the InputStreamReader class in Java?
+What is the OutputStreamWriter class in Java?
+What is the StringWriter class in Java?
+What is the CharArrayReader class in Java?
+What is the CharArrayWriter class in Java?
+What is the InputStream class in Java?
+What is the OutputStream class in Java?
+What is the ByteArrayOutputStream class in Java?
+What is the ByteArrayInputStream class in Java?
+What is the File class in Java?
+What is the Path class in Java?
+What is the Files class in Java?
+What is the Stream
